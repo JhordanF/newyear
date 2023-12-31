@@ -9,6 +9,19 @@
 
 body{
     overflow: hidden;
+    background-image: url('tu-imagen-de-fondo.jpg'); /* Reemplaza con la URL de tu imagen */
+            background-size: cover;
+}
+.bgVideo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    z-index: -1;
 }
 
 section{
