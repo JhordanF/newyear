@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/bb17979f17.js" crossorigin="anonymous"></script>
+    <title>Feliz año nuevo</title>
+</head>
+
+<body>
+
+    <div id="botonMostrar">
+        <button onclick="mostrarContenido()">Feliz año nuevo Daniela/Alexandra bendiciones</button>
+    </div>
+
+    <div id="contenido">
+
+        
+
+        <section>
+           
+            <div class="box">
+                
+                    <div class="mensaje" style="text-align: center; margin-top: 20px; font-size: 24px; color: #333;">
+                    Dios les bendiga, les regale paz, salud. Este nuevo año los mejores deseos a la familia Daniela y Alexandra.
+                </div>
+                <div class="circle">
+                    <h2>Feliz <br>año <br>nuevo</h2>
+                    <i class="fa-solid fa-champagne-glasses fa-4x"></i>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <audio id="audio" autoplay muted>
+        <source src="1.wav" type="audio/wav">
+        Tu navegador no admite el elemento de audio.
+    </audio>
+
+    <script src="js/app.js"></script>
+    <script>
+
+        document.addEventListener('DOMContentLoaded', (event) => {
+            // Tu código que depende de DOM, si es necesario
+        });
+
+        function mostrarContenido() {
+            var botonMostrar = document.getElementById("botonMostrar");
+            var contenido = document.getElementById("contenido");
+            botonMostrar.style.display = "none";
+            contenido.style.display = "block";
+            document.getElementById("audio").muted = false;
+            document.getElementById("audio").play();
+        }
+    </script>
+</body>
+
+</html>
